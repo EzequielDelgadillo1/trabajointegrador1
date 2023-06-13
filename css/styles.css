@@ -1,2 +1,972 @@
+* {
+    margin: 0px;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: #f1efef;
+}
+
+/*SECCION DE ESTILOS DEL HEADER Y EL NAV*/
+
+header{
+    background-color: #464747;
+    padding: 10px 20px;
+
+    
+}
 
 
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    
+}
+
+.encabezado a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+.logo {
+    display: flex;
+    height: 90px;
+    font-size: 12px;   
+}
+
+.logo h1 {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+
+}
+
+.search-bar form {
+    padding-right: 300px;
+}
+
+
+.search-bar input[type="text"] {
+    width: 500px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+.search-bar input[type="submit"] {
+    padding: 11px 11px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+/*SECCION BARRA DE NAVEGACION*/
+
+nav {
+    border-top: solid 1px #fff;
+    text-align: center;
+    background-color: #464747;
+    padding: 14px;
+    
+    
+}
+nav a {
+    padding: 14px 16px;
+    color: #fff;
+}
+
+nav a:link, a:visited, a:active {
+    text-decoration:none;
+}
+nav a:hover {
+    background-color: #007bff;
+}
+
+/*SECCION MAIN: SLIDER*/
+
+.img-slider img {
+   
+   width: 100%;
+}
+
+
+/*SECCION MAIN: PRODUCTOS (CARDS)*/
+
+.titulo-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #000000;
+    color: #fff;
+    
+
+}
+
+
+.container-productos-destac{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    padding-right: 50px;    
+    
+}
+
+.card-cart-destac {
+    width: 220px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: solid 1px #646363;
+    border-radius: 7%;
+    padding: 20px;    
+    
+}
+
+.card-cart-destac:hover {
+    box-shadow: 0px 2px 10px 1px #646363;
+    
+}
+
+.card-cart-destac img {
+    width: 100%;
+    border-bottom: solid 1px  #646363 ;
+
+    
+}
+
+.Description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.Description span {
+    display: flex;
+    flex-direction: column;
+
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    
+    
+}
+
+
+
+.Description input {
+    border-radius: 10px;
+    margin: 15px;
+    cursor: pointer;
+    padding: 7px;
+
+}
+
+.Description input[value="COMPRAR"] {
+    background-color: #000000;
+    color: #fff;
+    border: 1px solid #000000;
+}
+
+.Description input[value="COMPRAR"]:hover{
+    background-color: #201f1f;
+    
+}
+
+.Description input[value="VER MAS"] {
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.boton-mas-productos {
+    display: flex;
+    justify-content: center;
+}
+
+.boton-mas-productos input {
+    margin-top: 20px;
+    padding: 20px 50px 20px 50px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #000000;
+    color: #fff;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+.boton-mas-productos input:hover {
+    background-color: #131212;
+    font-size: 13px;
+}
+
+/*SECCION SERVICIOS*/
+
+.container-servicios{
+    margin-top: 100px;
+    height: 160px;
+    background-color: #6b090e;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+.servicios {
+    display: flex;
+    align-items: center;
+    
+}
+
+.description-servicios p {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;  
+}
+
+.description-servicios span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*SECCION FOOTER: NAVEGACION*/
+
+footer {
+    background-color: rgb(58, 63, 61);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.container-foooter-navegacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulos-footer-navegacion {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.navegacion-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.navegacion-footer a {
+    margin-bottom: 10px;
+    color: #ffffff;
+
+}
+
+.navegacion-footer a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+
+/*SECCION FOOTER: REDES SOCIALES*/
+
+.container-footer-redes-sociales {
+    display: flex;
+    flex-direction: column;
+}
+
+.redes-sociales-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.redes-sociales-footer a {
+    margin-bottom: 10px;
+}
+
+/*SECCION FOOTER*/
+
+.container-footer-contactos {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactos-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-contactos-footer  {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+
+.description-contactos-footer p {
+    padding-left: 8px;
+    color: #ffffff;
+}
+
+/*-------------------------------------HTML EMPRESA-----------------------------------------------------------------------------*/
+
+/*SECCION DE ESTILOS DEL HEADER Y EL NAV*/
+
+header{
+    background-color: #464747;
+    padding: 10px 20px;
+
+    
+}
+
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    
+}
+
+.encabezado a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+.logo {
+    display: flex;
+    height: 90px;
+    font-size: 12px;   
+}
+
+.logo h1 {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+
+}
+
+.search-bar form {
+    padding-right: 300px;
+}
+
+
+.search-bar input[type="text"] {
+    width: 500px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+.search-bar input[type="submit"] {
+    padding: 11px 11px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+/*SECCION BARRA DE NAVEGACION*/
+
+nav {
+    border-top: solid 1px #fff;
+    text-align: center;
+    background-color: #464747;
+    padding: 14px;
+    
+    
+}
+nav a {
+    padding: 14px 16px;
+    color: #fff;
+}
+
+nav a:link, a:visited, a:active {
+    text-decoration:none;
+}
+nav a:hover {
+    background-color: #007bff;
+}
+
+/*SECCION MAIN*/
+
+.container-texto-informativo {
+    text-align: center;
+    margin: 70px;
+}
+
+.titulo-texto {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 40px;
+}
+
+.texto-1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #131212;
+}
+
+.texto-2 {
+    font-size: 18px;
+    margin-bottom: 70px;
+    color: #131212;
+}
+
+.texto-3 {
+    font-size: 19px;
+    margin-bottom: 25px;
+    color: #6b090e;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+/*SECCION FOOTER: NAVEGACION*/
+
+footer {
+    background-color: #3a3f3d;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.container-foooter-navegacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulos-footer-navegacion {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.navegacion-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.navegacion-footer a {
+    margin-bottom: 10px;
+    color: #ffffff;
+
+}
+
+.navegacion-footer a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+
+/*SECCION FOOTER: REDES SOCIALES*/
+
+.container-footer-redes-sociales {
+    display: flex;
+    flex-direction: column;
+}
+
+.redes-sociales-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.redes-sociales-footer a {
+    margin-bottom: 10px;
+}
+
+/*SECCION FOOTER: CONTACTOS*/
+
+.container-footer-contactos {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactos-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-contactos-footer  {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+
+.description-contactos-footer p {
+    padding-left: 8px;
+    color: #ffffff;
+}
+
+
+/*------------------------------------------PAGINA PRODUCTOS--------------------------------------------------*/
+
+header{
+    background-color: #464747;
+    padding: 10px 20px;
+
+    
+}
+
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    
+}
+
+.encabezado a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+.logo {
+    display: flex;
+    height: 90px;
+    font-size: 12px;   
+}
+
+.logo h1 {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+
+}
+
+.search-bar form {
+    padding-right: 300px;
+}
+
+
+.search-bar input[type="text"] {
+    width: 500px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+.search-bar input[type="submit"] {
+    padding: 11px 11px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+/*SECCION BARRA DE NAVEGACION*/
+
+nav {
+    border-top: solid 1px #fff;
+    text-align: center;
+    background-color: #464747;
+    padding: 14px;
+    
+    
+}
+nav a {
+    padding: 14px 16px;
+    color: #fff;
+}
+
+nav a:link, a:visited, a:active {
+    text-decoration:none;
+}
+nav a:hover {
+    background-color: #007bff;
+}
+
+/*SECCION MAIN: PRODUCTOS*/
+
+main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.titulo-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #000000;
+    color: #fff;
+
+}
+
+.container-productos-destac{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    padding-right: 50px;    
+    
+}
+
+.card-cart-destac {
+    width: 220px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: solid 1px #646363;
+    border-radius: 7%;
+    padding: 20px;    
+    
+}
+
+.card-cart-destac:hover {
+    box-shadow: 0px 2px 10px 1px #646363;
+    
+}
+
+.card-cart-destac img {
+    width: 100%;
+    border-bottom: solid 1px  #646363 ;
+
+    
+}
+
+.Description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.Description span {
+    display: flex;
+    flex-direction: column;
+
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    
+    
+}
+
+
+
+.Description input {
+    border-radius: 10px;
+    margin: 15px;
+    cursor: pointer;
+    padding: 7px;
+
+}
+
+.Description input[value="COMPRAR"] {
+    background-color: #000000;
+    color: #fff;
+    border: 1px solid #000000;
+}
+
+.Description input[value="COMPRAR"]:hover{
+    background-color: #201f1f;
+    
+}
+
+.Description input[value="VER MAS"] {
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+/*SECCION FOOTER*/
+
+footer {
+    background-color: rgb(58, 63, 61);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.container-foooter-navegacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulos-footer-navegacion {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.navegacion-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.navegacion-footer a {
+    margin-bottom: 10px;
+    color: #ffffff;
+
+}
+
+.navegacion-footer a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+
+/*SECCION FOOTER: REDES SOCIALES*/
+
+.container-footer-redes-sociales {
+    display: flex;
+    flex-direction: column;
+}
+
+.redes-sociales-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.redes-sociales-footer a {
+    margin-bottom: 10px;
+}
+
+/*SECCION FOOTER: CONTACTOS*/
+
+.container-footer-contactos {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactos-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-contactos-footer  {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+
+.description-contactos-footer p {
+    padding-left: 8px;
+    color: #ffffff;
+}
+
+/*---------------------------------------------PAGINA MI CUENTA----------------------------------------------*/
+
+
+.container-inicia-sesion  {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.container-inicia-sesion form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-inicia-sesion input[type="email"]{
+   margin-bottom: 50px;
+   width: 500px;
+   height: 30px;
+   padding: 8px;
+   border: solid 1px #000000;
+   border-radius: 10px;
+   
+}
+
+.container-inicia-sesion input[type="password"]{
+    margin-bottom: 50px;
+    width: 500px;
+    height: 30px;
+    padding: 8px;
+    border: solid 1px #000000;
+    border-radius: 10px;
+    
+ }
+
+ .container-inicia-sesion input[type="button"]{
+    width: 515px;
+    height: 40px;
+    padding: 8px;
+    border: solid 1px #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: bold;
+    
+ }
+
+ .text-sesion {
+    font-weight: bold;
+    margin-bottom: 20px;
+ }
+
+ .text-sesion a {
+    color: #007bff;
+ }
+
+/*------------------------------------------------------PAGINA REGISTRO----------------------------------------------------------*/
+
+.container-crear-cuenta {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container-crear-cuenta form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-crear-cuenta input {
+    margin-bottom: 40px;
+    width: 500px;
+    height: 30px;
+    padding: 8px;
+    border: solid 1px #000000;
+    border-radius: 10px;
+}
+
+.container-crear-cuenta label {
+    margin-bottom: 5px;
+}
+
+.container-crear-cuenta input[type="button"]{
+    width: 515px;
+    height: 40px;
+    padding: 8px;
+    border: solid 1px #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.text-crear-cuenta {
+    font-weight: bold;
+    margin-bottom: 20px;
+ }
+
+ .text-crear-cuenta a {
+    color: #007bff;
+ }
+
+ /*----------------------------------------------PAGINA:CONTACTO-------------------------------------*/
+
+ .container-contacto {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container-contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-contacto input {
+    margin-bottom: 40px;
+    width: 500px;
+    height: 30px;
+    padding: 8px;
+    border: solid 1px #000000;
+    border-radius: 10px;
+}
+
+.container-contacto textarea {
+    border: solid 1px #000000;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.container-contacto input[type="button"]{
+    width: 515px;
+    height: 40px;
+    padding: 8px;
+    border: solid 1px #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.container-contacto label {
+    margin-bottom: 5px;
+}
